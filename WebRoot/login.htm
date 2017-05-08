@@ -1,0 +1,307 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)http://10.255.44.33/srun_portal_pc.php -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=7.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>登录</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<SCRIPT language=javascript src="js/jquery.js"></SCRIPT>
+
+<SCRIPT language=javascript src="js/srun_portal.js"></SCRIPT>
+
+<SCRIPT language=javascript src="js/message.js"></SCRIPT>
+
+<STYLE type=text/css>* {
+	FONT-FAMILY: '微软雅黑','Microsoft Yahei',Arial, Helvetica, sans-serif; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+BODY {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px
+}
+A {
+	CURSOR: pointer; TEXT-DECORATION: none; COLOR: #333; OUTLINE-STYLE: none
+}
+A:hover {
+	TEXT-DECORATION: none; COLOR: #06f
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+.float_l {
+	FLOAT: left
+}
+.float_r {
+	FLOAT: right
+}
+.clearfix:before {
+	CONTENT: ""; DISPLAY: block
+}
+.clearfix:after {
+	CONTENT: ""; DISPLAY: block
+}
+.clearfix:after {
+	CLEAR: both
+}
+.navbar {
+	WIDTH: 100%; VERTICAL-ALIGN: middle; BACKGROUND: url(/images/head-bg.png); MARGIN: 0px auto
+}
+.container {
+	HEIGHT: 600px; BACKGROUND-IMAGE: url(/images/bg_5.jpg); TEXT-ALIGN: center; MARGIN: 0px auto
+}
+.contain {
+	HEIGHT: 100%; WIDTH: 980px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px
+}
+.footer {
+	FONT-SIZE: 12px; HEIGHT: 35px; WIDTH: 980px; MARGIN: 0px auto; LINE-HEIGHT: 35px
+}
+.login {
+	FONT-SIZE: 0.87em; POSITION: relative; PADDING-BOTTOM: 1em; TEXT-ALIGN: left; PADDING-TOP: 1.5em; PADDING-LEFT: 1.5em; PADDING-RIGHT: 1.5em; border-radius: 4px 4px 4px 4px
+}
+UL.login LI {
+	MARGIN-BOTTOM: 5px
+}
+.margbt {
+	MARGIN-BOTTOM: 4px; COLOR: white
+}
+TEXTAREA {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='text'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='password'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='datetime'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='datetime-local'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='date'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='month'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='time'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='week'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='number'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='email'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='url'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='search'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='tel'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+INPUT[type='color'] {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+.uneditable-input {
+	BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid; BACKGROUND-COLOR: rgb(255,255,255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+}
+SELECT {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+TEXTAREA {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='text'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='password'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='datetime'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='datetime-local'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='date'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='month'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='time'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='week'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='number'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='email'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='url'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='search'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='tel'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+INPUT[type='color'] {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+.uneditable-input {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; HEIGHT: 24px; VERTICAL-ALIGN: middle; COLOR: rgb(36,36,36); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 6px; DISPLAY: inline-block; LINE-HEIGHT: 24px; PADDING-RIGHT: 6px; border-radius: 3px
+}
+TEXTAREA:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='text']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='password']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='datetime']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='datetime-local']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='date']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='month']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='time']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='week']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='number']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='email']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='url']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='search']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='tel']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+INPUT[type='color']:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+.uneditable-input:focus {
+	OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6)
+}
+.input INPUT[type='text'] {
+	WIDTH: 268px
+}
+.input INPUT[type='password'] {
+	WIDTH: 268px
+}
+INPUT[type='checkbox'] {
+	VERTICAL-ALIGN: middle; MARGIN-TOP: -3px
+}
+.login INPUT[type='button'] {
+	FONT-SIZE: 14px; CURSOR: pointer; BORDER-TOP: #fff 0px solid; HEIGHT: 35px; BORDER-RIGHT: #fff 0px solid; WIDTH: 80px; BACKGROUND: #b2cb49 0% 0%; BORDER-BOTTOM: #fff 0px solid; COLOR: #fff; BORDER-LEFT: #fff 0px solid; DISPLAY: inline-block; background-clip: border-box; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px
+}
+INPUT[type='submit'] {
+	FONT-SIZE: 14px; CURSOR: pointer; BORDER-TOP: #fff 0px solid; HEIGHT: 35px; BORDER-RIGHT: #fff 0px solid; WIDTH: 80px; BACKGROUND: #b2cb49 0% 0%; BORDER-BOTTOM: #fff 0px solid; COLOR: #fff; BORDER-LEFT: #fff 0px solid; DISPLAY: inline-block; background-clip: border-box; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px
+}
+.login INPUT[type='button']:hover {
+	BACKGROUND-COLOR: #a2c800
+}
+INPUT[type='submit']:hover {
+	BACKGROUND-COLOR: #a2c800
+}
+.login A {
+	FONT-SIZE: 14px; BORDER-TOP: #fff 0px solid; HEIGHT: 35px; BORDER-RIGHT: #fff 0px solid; WIDTH: 80px; BACKGROUND: #3bb3e0 0% 0%; BORDER-BOTTOM: #fff 0px solid; COLOR: #fff; TEXT-ALIGN: center; BORDER-LEFT: #fff 0px solid; DISPLAY: inline-block; LINE-HEIGHT: 35px; background-clip: border-box; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px
+}
+.login A:hover {
+	BACKGROUND-COLOR: #2482a5
+}
+.logo {
+	HEIGHT: 70px; MARGIN: 0px
+}
+.waps {
+	FONT-SIZE: 12px; BORDER-TOP: #ccc 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; BORDER-RIGHT: #ccc 1px solid; WIDTH: 600px; MARGIN-TOP: 100px; BORDER-BOTTOM: #ccc 1px solid; COLOR: white; PADDING-BOTTOM: 5px; TEXT-ALIGN: left; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #ccc 1px solid; LINE-HEIGHT: 28px; PADDING-RIGHT: 5px; border-radius: 4px 4px 4px 4px
+}
+.con {
+	WIDTH: 600px; BACKGROUND: #fff; TEXT-ALIGN: left; FILTER: Alpha(opacity=80); MARGIN: 0px auto; border-radius: 4px 4px 4px 4px
+}
+.con P {
+	POSITION: relative; COLOR: black; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY class=bottom>
+<DIV class=navbar>
+<DIV class=logo><IMG style="WIDTH: 300px; MARGIN: 0px 200px" 
+src="/images/xidian.png"></DIV><!--<span style="float: right; margin-top: -45px; margin-right:220px;font-size:22px;color:red">上网不涉密  涉密不上网</span>--></DIV>
+<DIV class=container>
+<DIV class="contain clearfix"><!--　<div class="float_l waps" style="margin-top:90px; width:600px; color:white; text-align:left; font-size:13px; border:1px solid #CCC; border-radius: 4px 4px 4px 4px; padding:10px 10px;">
+      		<div class="con">
+      		<p>
+      		<br/>
+　　　　　　　
+        通知列表： <br/>
+　　	<a href="http://10.0.0.55:8800/notice/list/view?id=4" style="text-decoration:underline" target="_blank">《关于校园网计费系统启用的通知》</a><br/>
+　　	<a href="http://10.0.0.55:8800/notice/list/view?id=3" style="text-decoration:underline" target="_blank">《校园网网费微信支付演示》</a><br/>
+　　	<a href="http://10.0.0.55:8800/notice/list/view?id=1" style="text-decoration:underline" target="_blank">《关于升级后校园网计费系统试运行的通知》</a><br/>
+<br/>
+<br/>
+			</p>
+			
+			</div> 
+        </div>　-->
+<DIV class=float_r style="MARGIN-TOP: 80px">
+<FORM onsubmit="return check1(this)" method=post name=form2 
+action=/login><INPUT type=hidden value=login name=action> <INPUT 
+type=hidden value=0 name=ac_id> <INPUT type=hidden name=user_ip> <INPUT 
+type=hidden name=nas_ip> <INPUT type=hidden name=user_mac> <INPUT type=hidden 
+name=url> 
+<UL class=login>
+  <LI>
+  <P class=margbt>用户名/username</P>
+  <DIV class=input><INPUT size=35 name=username> </DIV>
+  <LI>
+  <P class=margbt>密码/password</P>
+  <DIV class=input><INPUT size=35 type=password name=password> </DIV>
+  <LI><LABEL class=margbt><INPUT title=记忆密码 type=checkbox value=1 name=save_me> 
+  记住密码</LABEL> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+  <LI class=margin>
+  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+    <TBODY>
+    <TR vAlign=middle>
+      <TD height=40 width=90 align=left><INPUT id=button class="a a_demo_one" type=submit value=登录> 
+      </TD>
+      <TD width=100 align=center><INPUT onclick=do_logout() class="a a_demo_two" type=button value=注销> 
+      </TD>
+      <TD width=90 align=right><A id=goto_services class="a a_demo_three" 
+        href="http://10.255.44.1:8800/" target=_blank>自服务</A> 
+  </TD></TR></TBODY></TABLE><BR></LI></UL></FORM></DIV></DIV></DIV>
+<DIV class=footer>
+<DIV class=float_l style="WIDTH: auto">所有版权：© 西安电子科技大学</DIV>
+<DIV class=float_r><A style="COLOR: #ff0000" 
+href="http://10.255.44.33/download_client.html" 
+target=_blank>联系我们</A>&nbsp;&nbsp;|&nbsp;&nbsp;联系电话：（029）88201252；南校区电话（029）81891357； 
+<!--<div class="float_r"><a href="http://" target="_blank" style="color:#00C">有线客户端下载</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://.edu.cn" target="_blank">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://nc.tju.edu.cn/inc/Notice/201511/P020151128844022637447.pdf" target="_blank">使用帮助</a></div>
+    <div style="text-align:center; margin:0px auto;display:none;">北京理工大学  <a href="http://www.bit.edu.cn" target="_blank">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://.edu.cn/inc/Notice/201511/P020151128844022637447.pdf" style="text-decoration:underline" target="_blank">使用帮助</a></div>--></DIV></DIV></BODY></HTML>
